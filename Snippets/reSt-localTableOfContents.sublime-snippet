@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+.. contents:: ${1:Table of Contents Title}
+   :local:
+
+$0
+]]></content>
+    <tabTrigger>contents</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>local toc table of contents</description>
+</snippet>

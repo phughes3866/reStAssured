@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+.. code-block:: ${1:bash / text / python (see pygment lexers)}
+   :caption: this.py .. appears above code block
+   :name: my_config_file_reference .. for ref pointers to block
+   :linenos: .. if present then add line numbers
+   :lineno-start: 10
+   :emphasize-lines: 3,5-7 .. comma separated list of line ranges
+   :dedent: 4 ..strip indentation chars from code
+
+   ${2:source code here}
+]]></content>
+    <tabTrigger>code</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>code block directive</description>
+</snippet>

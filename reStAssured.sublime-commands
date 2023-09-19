@@ -1,0 +1,58 @@
+[
+    // {
+    //     "caption": "Sphinx Refmate: Insert Local Project Links (All Types)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": true}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Local Project Links (docs/pages)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": true, "refTypeToGet": "doc"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Local Project Links (labels/sections)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": true, "refTypeToGet": "label"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Local Project Links (Glossary Terms)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": true, "refTypeToGet": "term"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Cross Project Links (All Types)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": false}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Cross Project Links (docs/pages)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": false, "refTypeToGet": "doc"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Cross Project Links (labels/sections)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": false, "refTypeToGet": "label"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Insert Cross Project Links (Glossary Terms)",
+	// 	"command" : "insert_sphinx_links", "args": {"withinProj": false, "refTypeToGet": "term"}
+    // },
+    // {
+    //     "caption": "Sphinx Refmate: Readme/Information (opens README.md file)",
+    //     "command": "open_file",
+    //     "args":
+    //     {
+    //       "file": "${packages}/SphinxRefmate/README.md",
+    //     }
+    // },
+    	{
+    	      "caption": "reStAssured: Settings",
+    	      "command": "edit_settings", "args":
+    	      {
+    	          "base_file": "${packages}/reStAssured/reStAssured.sublime-settings",
+    	          "default": "// reStAssured plugin: user defined settings\n{\n\t$0\n}\n"
+    	      }
+    	  },
+      	{
+    	    "caption": "reStAssured: Key Bindings",
+    	    "command": "edit_settings", "args":
+            {
+                "base_file": "${packages}/reStAssured/Default (${platform}).sublime-keymap",
+                "default": "[\n\t$0\n]\n"
+            }
+        },
+]

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+.. seealso::
+
+   ${1:Def List Title}
+      ${2:Don't need a def list. A para on the yellow is good too.}
+
+   ${3:Def List 2 Title}
+      ${4:Definition list 2 text}
+]]></content>
+    <tabTrigger>seealso</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>top seealso</description>
+</snippet>

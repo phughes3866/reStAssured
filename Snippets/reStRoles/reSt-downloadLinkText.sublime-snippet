@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:download:`${1:${SELECTION/(^\s*$)/(?1download file description)/g}} <${2:../download.pdf [rel to cur folder or abs to url root]}>` $0
+]]></content>
+    <tabTrigger>download</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>download inline role (download file link)</description>
+</snippet>

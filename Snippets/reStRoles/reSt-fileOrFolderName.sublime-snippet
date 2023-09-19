@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:file:`${1:${SELECTION/(^\s*$)/(?1file or folder name)/g}}` $0
+]]></content>
+    <tabTrigger>file</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>file inline role (stylised filename text)</description>
+</snippet>

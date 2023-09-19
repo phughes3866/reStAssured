@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[`${TM_SELECTED_TEXT:Paragraph} <${1:hyperlink}>`_$0]]></content>
+    <scope>text.restructuredtext</scope>
+    <description>hyperlink on selection</description>
+</snippet>

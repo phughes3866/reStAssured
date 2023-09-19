@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+:${1:Date}: ${2:2019-08-16}
+:${3:Field name 2}: ${4:Field body 2}
+:Authors: - Me
+          - Myself
+          - I
+:Indentation: Since the field marker may be quite long, the second
+   and subsequent lines of the field body do not have to line up
+   with the first line, but they must be indented relative to the
+   field name marker, and they must line up with each other.
+:Parameter i: integer$0
+]]></content>
+    <tabTrigger>listf</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>field list</description>
+</snippet>

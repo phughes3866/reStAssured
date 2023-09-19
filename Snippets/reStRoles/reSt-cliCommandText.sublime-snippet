@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:command:`${1:${SELECTION/(^\s*$)/(?1ls -la | grep sphinx)/g}}` $0
+]]></content>
+    <tabTrigger>command</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>command inline role (cli stylised OS command text)</description>
+</snippet>

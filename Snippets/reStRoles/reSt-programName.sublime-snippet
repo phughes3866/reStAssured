@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:program:`${1:${SELECTION/(^\s*$)/(?1curl)/g}}` $0
+]]></content>
+    <tabTrigger>program</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>program inline role (stylised program names)</description>
+</snippet>

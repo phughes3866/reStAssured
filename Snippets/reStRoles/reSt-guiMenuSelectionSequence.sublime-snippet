@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:menuselection:`${1:${SELECTION/(^\s*$)/(?1Start --> &Programs)/g}}` $0
+]]></content>
+    <tabTrigger>menuselection</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>menu selection inline role (--> = arrow)</description>
+</snippet>

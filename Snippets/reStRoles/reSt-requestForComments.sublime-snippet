@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:rfc:`${1:${SELECTION/(^\s*$)/(?1number[#optional-section])/g}}` $0
+]]></content>
+    <tabTrigger>rfc</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>rfc inline role (request for comments link)</description>
+</snippet>

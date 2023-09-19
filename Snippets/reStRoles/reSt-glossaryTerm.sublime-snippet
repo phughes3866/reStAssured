@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:term:`${1:${SELECTION/(^\s*$)/(?1extant glossary term)/g}}` $0
+]]></content>
+    <tabTrigger>glosterm</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>term inline role (glossary term)</description>
+</snippet>

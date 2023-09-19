@@ -1,0 +1,39 @@
+[
+
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "id": "reStAssured",
+                        "caption": "reStAssured",
+                        "children":
+                        [
+                        	{
+                        	      "caption": "Settings",
+                        	      "command": "edit_settings", "args":
+                        	      {
+                        	          "base_file": "${packages}/reStAssured/reStAssured.sublime-settings",
+                        	          "default": "// reStAssured plugin: user defined settings\n{\n\t$0\n}\n"
+                        	      }
+                        	  },
+                          	{
+                        	    "caption": "Key Bindings",
+                        	    "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/reStAssured/Default (${platform}).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                    	    },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+

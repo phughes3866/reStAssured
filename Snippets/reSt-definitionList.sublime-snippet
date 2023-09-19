@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+term 1
+    Definition 1.
+
+term 2
+    Definition 2, paragraph 1.
+
+    Definition 2, paragraph 2.
+
+term 3 : classifier
+    Definition 3.
+
+term 4 : classifier one : classifier two
+    Definition 4. Each definition list item contains a term, optional classifiers, and a definition. A term is a simple one-line word or phrase. Optional classifiers may follow the term on the same line, each after an inline " : " (space, colon, space). A definition is a block indented relative to the term, and may contain multiple paragraphs and other body elements. $0
+]]></content>
+    <tabTrigger>deflist</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>definition list</description>
+</snippet>

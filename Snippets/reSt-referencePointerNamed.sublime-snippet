@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:ref:`${1:visible link text} <${2:ref_target_name_no_initial_underscore}>` $0
+]]></content>
+    <tabTrigger>ref-pointer-named</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>xref:pointer with own name (not target's name)</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+.. _${1:create_meaningful_ref_target_label_pre_section}:
+
+$0
+]]></content>
+    <tabTrigger>ref-target-section</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>xref:target label for pre-section marking</description>
+</snippet>

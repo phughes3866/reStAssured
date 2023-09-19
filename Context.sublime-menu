@@ -1,0 +1,74 @@
+[
+	{
+		"id" : "reStAssuredCtxMenu",
+		"caption": "reStAssured",
+		"command": "menu_visible_for_rst",
+		"children":
+				[
+		{
+		"caption": "Basic Highlighting",
+		"children":
+				[
+		    {
+				"command" : "emphasis",
+		    },
+		    {
+				"command" : "strong_emphasis",
+		    },
+		    {
+				"command" : "back_tick",
+		    },
+		    {
+				"command" : "literal",
+		    },
+		    {
+				"command" : "substitution",
+		    },
+		]},
+		{
+		"caption": "Footnotes",
+		"children":
+				[
+		    {
+				"command" : "insert_footnote",
+		    },
+		    {
+				"command" : "go_to_footnote_reference",
+		    },
+		    {
+				"command" : "go_to_footnote_definition",
+		    },
+		    {
+				"command" : "magic_footnotes",
+		    },
+		]},
+		{
+		"caption": "Headers",
+		"children":
+				[
+		    {
+				"command" : "header_change_level_up",
+		    },
+		    {
+				"command" : "header_change_level_down",
+		    },
+		    {
+				"command" : "jump_forward_any_level",
+		    },
+		    {
+				"command" : "jump_forward_same_level",
+		    },
+		    {
+				"command" : "jump_back_any_level",
+		    },
+		    {
+				"command" : "jump_back_same_level",
+		    },
+		    {
+				"command" : "header_folding_on_off",
+		    },
+		]},
+		]
+
+	}
+]

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+.. todo:: $0
+]]></content>
+    <tabTrigger>todo</tabTrigger>
+    <scope>text.restructuredtext - source - meta.tag, punctuation.definition.tag.begin</scope>
+    <description>todo-drctive</description>
+</snippet>

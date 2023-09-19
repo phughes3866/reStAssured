@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+.. _${1/([[:upper:]])|([[:space:]])|([[:punct:]])/(?1:(\l$1))(?2:_)(?3:)/g}:
+
+${1}
+${1/./~/g}
+
+$0
+]]></content>
+    <tabTrigger>h7</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>heading7</description>
+</snippet>
