@@ -68,6 +68,9 @@
 				"command" : "header_folding_on_off",
 		    },
 		]},
+	    {
+			"command" : "convert_text_to_ref_label",
+	    },
 		]
 
 	}

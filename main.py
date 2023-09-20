@@ -63,6 +63,41 @@ class SaltyDogDynamicProjectSettingsUpdater(sublime_plugin.EventListener):
 
 #saltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogEND
 
+class ConvertTextToRefLabelCommand(sublime_plugin.TextCommand):
+    """
+    Convert selection(s) into reSt reference label format:
+    e.g. [My Textual Title] >> .. _my_textual_title
+    Designed for use with reSt Titles which can then be used as references
+    """
+
+    # def description(self):
+    #     scopeOrNot = [' (No Scope)', ''][self.is_enabled()]
+    #     return f'Convert Selection To reSt Ref Target{scopeOrNot}'
+
+    # def is_enabled(self):
+    #     return testViewForScopes(self.view, ["text.restructuredtext"])
+
+    def run(self, edit):
+        def str_from_title(title):
+            translator = str.maketrans('', '', string.punctuation)
+            barestr = title.translate(translator).strip().lower()
+            return ".. _{}:\n\n".format(re.sub(r"\s+", '_', barestr))
+
+        # Main:
+        # Get selection(s)
+        global pluginCentral
+        if not pluginCentral.allowCommandsToRun():
+            return
+        sel = self.view.sel();
+        for s in sel:       
+            if s.empty(): # expand to full line a cursor with no selection
+                s = self.view.full_line(s)
+            seltext = self.view.substr(s)
+            new_ref_anchor = str_from_title(seltext)
+            if new_ref_anchor:
+                self.view.replace(edit, s, new_ref_anchor)      
+
+
 #footnotesSTARTfootnotesSTARTfootnotesSTARTfootnotesSTARTfootnotesSTARTfootnotesSTARTfootnotesSTART
 
 class Footnotes(sublime_plugin.EventListener):
