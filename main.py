@@ -1,5 +1,8 @@
 import sublime, sublime_plugin, re, os, sys, string
 from collections import namedtuple
+import json
+import xml.etree.ElementTree as ET
+
 
 from .utils.constants import pluginEnv, pluginSettingsGovernor
 from .utils import footnotesUtils as fu
@@ -62,6 +65,139 @@ class SaltyDogDynamicProjectSettingsUpdater(sublime_plugin.EventListener):
             pluginCentral.newViewHook(view)
 
 #saltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogENDsaltydogEND
+
+# class InsertMySnippetStrCommand(sublime_plugin.TextCommand):
+#     snippetStr = ""
+
+#     def run(self, edit):
+#         global pluginCentral
+#         if pluginCentral.allowCommandsToRun():
+#             if snippetStr:
+#                 self.view.run_command('insert_snippet', {'contents': self.snippetStr})
+
+# class InsertMySnippetFileCommand(sublime_plugin.TextCommand):
+#     snippetFile = ""
+
+#     def run(self, edit):
+#         global pluginCentral
+#         if pluginCentral.allowCommandsToRun():
+#             if snippetFile:
+#                 self.view.run_command("insert_snippet", { "name": self.snippetFile })
+
+# class WrapSelectionAsRoleCommand(InsertMySnippetCommand):
+#     def description(self):
+#         scopeOrNot = [' (No Scope)', ''][self.is_enabled()]
+#         return f'Apply reSt :role: Syntax{scopeOrNot}'
+
+#     def is_enabled(self):
+#         return testViewForScopes(self.view, ["text.restructuredtext"])
+
+#     def run(self, edit):
+#         global pluginCentral
+#         if not pluginCentral.allowCommandsToRun():
+#             return
+#         self.view.run_command('insert_snippet', {'contents': ":$1:`$SELECTION`"})
+
+# class WrapSelectionAsRoleDropdownCommand(sublime_plugin.TextCommand):
+
+#     def description(self):
+#         scopeOrNot = [' (No Scope)', ''][self.is_enabled()]
+#         return f'Select reSt :role: To Apply{scopeOrNot}'
+
+#     def is_enabled(self):
+#         return testViewForScopes(self.view, ["text.restructuredtext"])
+
+#     def onQuickPanelSelectionMade(self, index):
+#         if not index < 0: # index of -1 = noop; nothing was selected, e.g. the user pressed escape
+#             # pluginCentral.msgBox(f'selected = {self.roleDetails[index][2]}')
+#             self.view.run_command('insert_snippet', {'contents': self.roleDetails[index][2]})
+    
+#     def run(self, edit):
+#         global pluginCentral
+#         if not pluginCentral.allowCommandsToRun():
+#             return
+#         self.roleDetails = pluginCentral.settingsAsDict()["roleDetails"]
+#         self.quickPanelList = []
+#         for item in self.roleDetails:
+#             quickPanelItem = sublime.QuickPanelItem(
+#                     trigger=item[0],
+#                     details=item[1],
+#                     # annotation='',
+#                     kind=sublime.KIND_SNIPPET
+#             )
+#             self.quickPanelList.append(quickPanelItem)
+#         sublime.active_window().show_quick_panel(
+#             self.quickPanelList, 
+#             self.onQuickPanelSelectionMade,
+#             placeholder="Choose reSt :role: to apply:"
+#         )
+
+class InsertSnippetsFromDirCommand(sublime_plugin.TextCommand):
+    snippetDir = ""
+
+    # def description(self):
+    #     scopeOrNot = [' (No Scope)', ''][self.is_enabled()]
+    #     return f'Insert reSt Snippets{scopeOrNot}'
+
+    # def is_enabled(self):
+    #     return testViewForScopes(self.view, ["text.restructuredtext"])
+
+    def onQuickPanelSelectionMade(self, index):
+        if not index < 0: # index of -1 = noop; nothing was selected, e.g. the user pressed escape
+            # pluginCentral.msgBox(f'selected = {self.snippetStrList[index]}')
+            self.view.run_command('insert_snippet', {'contents': self.snippetStrList[index]})
+
+    def run(self, edit):
+        global pluginCentral
+        if not pluginCentral.allowCommandsToRun():
+            return
+        if not self.snippetDir:
+            return
+        allSnippetPaths = sublime.find_resources("*.sublime-snippet")
+        snippetPlaces = (f'Packages/{pluginCentral.pluginName}/{self.snippetDir}',
+                         f'Packages/User/{pluginCentral.pluginName}/{self.snippetDir}')
+        targetSnippetPaths = [ p for p in allSnippetPaths if p.startswith(snippetPlaces)]
+        self.snippetStrList = []
+        snippetPanelList = []
+        xmlErrorCount = 0
+        for s in targetSnippetPaths:
+            snippet        = sublime.load_resource(s)
+            try:
+                tree           = ET.fromstring(snippet)
+            except Exception as exxy:
+                print(f'XML Error in snippet resource: {str(s)}\n >> {str(exxy)}')
+                xmlErrorCount += 1
+                continue
+            name           = tree.findtext('description')
+            anyTabTrigger  = tree.findtext('tabTrigger')
+            tabTrigger     = [f'trig:{anyTabTrigger}', ''][anyTabTrigger is None]
+            content        = tree.findtext('content')
+            if content.startswith('\n'):
+                content = content[1:]
+            self.snippetStrList.append(content)
+            snippetPanelItem = sublime.QuickPanelItem(
+                    trigger=name,
+                    # details='',
+                    annotation=tabTrigger,
+                    kind=sublime.KIND_SNIPPET
+            )
+            snippetPanelList.append(snippetPanelItem)
+        if xmlErrorCount > 0:
+            pluginCentral.status_message(f'{xmlErrorCount} snippets excluded due to XML errors (see console for details)')
+        # self.quickPanelList = []
+        # for item in self.roleDetails:
+        if snippetPanelList:
+            sublime.active_window().show_quick_panel(
+                snippetPanelList, 
+                self.onQuickPanelSelectionMade,
+                placeholder="Choose snippet to insert::"
+            )
+        else:
+            pluginCentral.status_message(f'Command Void as No valid snippet files found in {self.snippetDir}')
+
+
+class InsertRoleSnippetCommand(InsertSnippetsFromDirCommand):
+    snippetDir = "Snippets/reStRoles"
 
 class ConvertTextToRefLabelCommand(sublime_plugin.TextCommand):
     """
