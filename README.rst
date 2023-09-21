@@ -1,8 +1,8 @@
-SublimeText ♥ reStructuredText
-==============================
+*******************************
+reStAssured Sublime Text plugin
+*******************************
 
-``sublime-rst-completion`` is a group of snippets and commands to facilitate writing restructuredText
-with SublimeText.
+``reStAssured`` is a Sublime Text plugin with snippets and utilities to assist in the writing of reStructuredText documents, particularly within a SphinxDocx environment
 
 
 Test out our subscript: H\ :sub:`two` \O. And our superscript: \ :sup:`superscript` \ 

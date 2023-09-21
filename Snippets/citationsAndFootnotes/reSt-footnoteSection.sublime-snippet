@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+.. rubric:: Footnotes
+
+${1:.. [#] Footnotes collected at bottom}
+]]></content>
+    <tabTrigger>footsection</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>footnote section</description>
+</snippet>
