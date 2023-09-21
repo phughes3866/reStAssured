@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-:index:`${1:text of index item}` $0
-]]></content>
-    <tabTrigger>index-inline</tabTrigger>
-    <scope>text.restructuredtext</scope>
-    <description>inline indexed item</description>
-</snippet>

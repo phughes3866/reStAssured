@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>guilabel</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>guilabel inline &role (stylised &amp;Gui text)</description>
+    <description>guilabel inline role (stylised &amp;Gui text)</description>
 </snippet>

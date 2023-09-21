@@ -74,6 +74,9 @@
 	    {
 			"command" : "insert_role_snippet",
 	    },
+	    {
+			"command" : "insert_user_defined_snippet",
+	    },
 		]
 
 	}

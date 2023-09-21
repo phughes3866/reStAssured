@@ -133,14 +133,7 @@ class SaltyDogDynamicProjectSettingsUpdater(sublime_plugin.EventListener):
 #         )
 
 class InsertSnippetsFromDirCommand(sublime_plugin.TextCommand):
-    snippetDir = ""
-
-    # def description(self):
-    #     scopeOrNot = [' (No Scope)', ''][self.is_enabled()]
-    #     return f'Insert reSt Snippets{scopeOrNot}'
-
-    # def is_enabled(self):
-    #     return testViewForScopes(self.view, ["text.restructuredtext"])
+    snippetDirs = () # tuple of strings in format 'Packages/PluginName/snippetdir'
 
     def onQuickPanelSelectionMade(self, index):
         if not index < 0: # index of -1 = noop; nothing was selected, e.g. the user pressed escape
@@ -151,12 +144,10 @@ class InsertSnippetsFromDirCommand(sublime_plugin.TextCommand):
         global pluginCentral
         if not pluginCentral.allowCommandsToRun():
             return
-        if not self.snippetDir:
+        if not self.snippetDirs:
             return
         allSnippetPaths = sublime.find_resources("*.sublime-snippet")
-        snippetPlaces = (f'Packages/{pluginCentral.pluginName}/{self.snippetDir}',
-                         f'Packages/User/{pluginCentral.pluginName}/{self.snippetDir}')
-        targetSnippetPaths = [ p for p in allSnippetPaths if p.startswith(snippetPlaces)]
+        targetSnippetPaths = [ p for p in allSnippetPaths if p.startswith(self.snippetDirs)]
         self.snippetStrList = []
         snippetPanelList = []
         xmlErrorCount = 0
@@ -193,11 +184,17 @@ class InsertSnippetsFromDirCommand(sublime_plugin.TextCommand):
                 placeholder="Choose snippet to insert::"
             )
         else:
-            pluginCentral.status_message(f'Command Void as No valid snippet files found in {self.snippetDir}')
+            pluginCentral.status_message(f'Command Void as No valid snippet files found in {self.snippetDirs}')
 
 
 class InsertRoleSnippetCommand(InsertSnippetsFromDirCommand):
-    snippetDir = "Snippets/reStRoles"
+    snippetDirs = (f'Packages/{__package__}/Snippets/reStRoles',
+                   f'Packages/User/{__package__}/Snippets/reStRoles')
+
+
+class InsertUserDefinedSnippetCommand(InsertSnippetsFromDirCommand):
+    snippetDirs = (f'Packages/User/{__package__}')
+
 
 class ConvertTextToRefLabelCommand(sublime_plugin.TextCommand):
     """

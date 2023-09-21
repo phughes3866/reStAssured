@@ -4,10 +4,17 @@ SublimeText ♥ reStructuredText
 ``sublime-rst-completion`` is a group of snippets and commands to facilitate writing restructuredText
 with SublimeText.
 
+
+Test out our subscript: H\ :sub:`two` \O. And our superscript: \ :sup:`superscript` \ 
+
+
+
+
 Demo
 ----
 
 (image links to a Youtube video)
+
 
 .. image:: http://img.youtube.com/vi/otM_tjIi_vY/0.jpg
    :target: http://www.youtube.com/watch?v=otM_tjIi_vY
