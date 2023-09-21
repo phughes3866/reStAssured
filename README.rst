@@ -5,8 +5,15 @@ reStAssured Sublime Text plugin
 ``reStAssured`` is a Sublime Text plugin with snippets and utilities to assist in the writing of reStructuredText documents, particularly within a SphinxDocx environment
 
 
-Test out our subscript: H\ :sub:`two` \O. And our superscript: \ :sup:`superscript` \ 
+Test out our subscript: H\ :sub:`two`\O. And our superscript: \ :sup:`superscript` \ 
+and we also have a :abbr:`UFO (Unidentified Flying Object)`, and a :command:`clicommand` and we have a :doc:`docdirectlink` and also a :doc:`labelledlink <../mydoc>` and also a :download:`download link <README.rst>` and a :file:`filename` and then we get on to :term:`glossary` and a gui label :guilabel:`&Preferences`. But what is sphinx and what is pure reSt? Here's an :samp:`inline sample` followed by a :kbd:`ctrl-v, ctrl-c` sequence :kbd:`Control-x, Control-c` (and again) and a :program:`sphinx` (program name). And an rfc which is :rfc:`1331[#5]`.  
+ 
 
+ 
+
+
+
+ 
 
 
 
