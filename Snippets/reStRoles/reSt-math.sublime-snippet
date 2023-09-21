@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:math:`${1:${SELECTION/(^\s*$)/(?1A_\text{c} = (\pi\/4) d^2)/g}}` $0
+]]></content>
+    <tabTrigger>math</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>math inline role (maths statement)[reSt]</description>
+</snippet>
