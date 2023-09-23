@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+.. list-table:: Optional Table Title. Adjust relative col :widths: as preferred.
+   :class: squashsmall
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 1 2 2
+
+   * - 
+     - Favourite Fruit
+     - Favourite Vegetable
+   * - Jane
+     - Raspberry
+     - Sweetcorn
+   * - Paul
+     - Mango
+     - Purple Sprouting Broccoli
+   * - Can omit as reqd:
+     - \:stub-columns:
+     - \:header-rows:
+]]></content>
+    <tabTrigger>tbtext</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>table for text</description>
+</snippet>

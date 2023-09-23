@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+.. contents:: ${1:Table of Contents}
+   ${2::local:}${3: Include only subsections of the current section. Omit flag for broader TOC.}
+   ${4::depth:}${5: Integer. Levels of subsections to include. Omit flag for unlimited depth.}
+   ${6::backlinks:}${7: none / top / entry (no subsection backlinks to TOC OR backlinks to TOC top / entry)}
+
+$0
+]]></content>
+    <tabTrigger>contents</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>table of contents[reSt]</description>
+</snippet>

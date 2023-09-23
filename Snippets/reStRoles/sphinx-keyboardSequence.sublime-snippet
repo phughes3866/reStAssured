@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>keyseq</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>kbd inline role (keyboard key sequence)</description>
+    <description>kbd inline role (keyboard key sequence)[sphinx]</description>
 </snippet>

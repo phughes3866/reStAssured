@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+.. figure:: ${1:imageInFigure-mandatory.jpeg}
+   :figwidth: ${2:40%}
+   :width: ${3:60%}
+   :align: ${4:left / center / right}
+   :alt: ${5:Image description (for SEO and the visually impaired)}
+   :target: ${6:URI (relative or absolute) or `a_ref_name`_ (adds hyperlink to image)}
+
+   ${7:[Delete this paragraph]Other directive options are (:scale:, :height:, :class:)
+   N.B. :figwidth: is the figure width within the screen width,
+   and :width: is the image width within the figwidth.
+
+   }${8:**This is the caption of the figure (a simple paragraph)**
+
+   }${9:The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph and the following
+   table:
+
+   +-----------------------+-----------------------+
+   | Symbol                | Meaning               |
+   +=======================+=======================+
+   | .. image:: tent.png   | Campground            |
+   +-----------------------+-----------------------+
+   | .. image:: waves.png  | Lake                  |
+   +-----------------------+-----------------------+
+   | .. image:: peak.png   | Mountain              |
+   +-----------------------+-----------------------+}
+
+$0
+]]></content>
+    <tabTrigger>figure_reSt</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>figure directive template[reSt]</description>
+</snippet>

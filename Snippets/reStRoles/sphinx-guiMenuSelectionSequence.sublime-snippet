@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>menuselection</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>menu selection inline role (--> = arrow)</description>
+    <description>menu selection inline role (--> = arrow)[sphinx]</description>
 </snippet>

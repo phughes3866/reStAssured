@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+.. admonition:: ${1:Given Title}
+
+   ${2:And what we want to say...}
+
+$0
+]]></content>
+    <tabTrigger>admon</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>admonition (generic - self titled)[reSt]</description>
+</snippet>

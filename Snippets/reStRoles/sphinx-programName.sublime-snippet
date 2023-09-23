@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>program</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>program inline role (stylised program names)</description>
+    <description>program inline role (program names)[sphinx]</description>
 </snippet>

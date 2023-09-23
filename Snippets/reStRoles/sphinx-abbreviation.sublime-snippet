@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+:abbr:`${1:${SELECTION/(^\s*$)/(?1UFO)/g}} (${2:letters expanded e.g. for UFO > Unidentified Flying Object})` $0
+]]></content>
+    <tabTrigger>abbr</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>abbr inline role (abbreviation)[sphinx]</description>
+</snippet>

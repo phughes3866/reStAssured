@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+
+.. role:: ${1:new-role}(${2:base-role})
+   :class: ${3:cssClassToApply}
+
+$0
+]]></content>
+    <tabTrigger>cust-role</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>custom inline role definition[reSt]</description>
+</snippet>

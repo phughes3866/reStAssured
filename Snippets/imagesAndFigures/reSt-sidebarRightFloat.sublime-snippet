@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-.. sidebar:: ${1:Title}
+.. sidebar:: ${1:Title of Right Floating Sidebar}
    :subtitle: ${2:Optional Sidebar Subtitle}
 
-   ${3:Body text of the sidebar. All the sidebar floats on a pale yellow background.}
+   ${3:Subsequent indented paragraphs form the body of the sidebar.}
 
 $0
 ]]></content>
     <tabTrigger>sidebar</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>sidebar (right floating)</description>
+    <description>sidebar (right floating)[reSt]</description>
 </snippet>

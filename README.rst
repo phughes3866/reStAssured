@@ -6,15 +6,19 @@ reStAssured Sublime Text plugin
 
 
 Test out our subscript: H\ :sub:`two`\O. And our superscript: \ :sup:`superscript` \ 
-and we also have a :ab:`UFO (Unidentified Flying Object)`, and a :command:`clicommand` and we have a :doc:`docdirectlink` and also a :doc:`labelledlink <../mydoc>` and also a :download:`download link <README.rst>` and a :file:`filename` and then we get on to :term:`glossary` and a gui label :guilabel:`&Preferences`. But what is sphinx and what is pure reSt? Here's an :samp:`inline sample` followed by a :kbd:`ctrl-v, ctrl-c` sequence :kbd:`Control-x, Control-c` (and again) and a :program:`sphinx` (program name). And an rfc which is :rfc:`165`. And a bit of :math:`A_   ext{c} = pi/4 d^2`  
- 
-
- 
+and we also have a :ab:`UFO (Unidentified Flying Object)` and :abbr:`UFO (Unidentified Flying Object)`, and a :command:`clicommand` and we have a :doc:`docdirectlink` and also a :doc:`labelledlink <../mydoc>` and also a :download:`download link <README.rst>` and a :file:`filename` and then we get on to :term:`glossary` and a gui label :guilabel:`&Preferences`. But what is sphinx and what is pure reSt? Here's an :samp:`inline sample` followed by a :kbd:`ctrl-v, ctrl-c` sequence :kbd:`Control-x, Control-c` (and again) and a :program:`sphinx` (program name). And an rfc which is :rfc:`165`. And a bit of :math:`A_   ext{c} = pi/4 d^2`  :ac:`UFO` that's an acronym? But can it have an explanatory: :ac:`UFO (Unidentified Flying Object)`. :code:`if pi > 4:` is there a sphinx code with variables??
 
 
+and a custom defined role:
 
- 
+.. role:: greencode(code)
+   :class: green
 
+which might work :greencode:`if all else fails`
+
+
+.. role:: greencode(code)
+   :class: green
 
 
 Demo
@@ -27,11 +31,14 @@ Demo
    :target: http://www.youtube.com/watch?v=otM_tjIi_vY
 
 
+.. figure:: https://i.vimeocdn.com/video/1728160755-ba00e36c6ace1b9f41e5a8874229b31efc6bc377099d9e8c591e3cf0603c16fc-d_200x150
+   :figwidth: 40%
+   :width: 90%
+   :align: right
+   :alt: Image description (for SEO and the visually impaired)
+   :target: https://vimeo.com/765708714
 
-.. contents::
-   :depth: 2
-   :local:
-
+   **This is the caption of the video still image**
 
 Install
 -------

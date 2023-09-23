@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+.. epigraph::
+
+   No matter where you go, there you are. The "epigraph" directive produces an "epigraph"-class block quote. 
+
+   -- Buckaroo Banzai
+
+]]></content>
+    <tabTrigger>epigraph-quote</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>quotation attributed to author</description>
+</snippet>

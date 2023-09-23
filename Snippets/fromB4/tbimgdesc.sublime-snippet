@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+.. list-table:: Optional Title. Without :widths: all cols equal proportions. Can adjust proportions for pic/text size. 
+   :class: squashsmall
+   :widths: 1 2
+
+   * - **Image Title** (img should be min 600px wide, pref 4:3 ration eg 600x450, 800x600)
+
+       Image connected text, with inline markup such as **bold** and *italic*. N.B. vw text will shrink for small screens.
+
+       Perhaps an author to finish. N.B. Text can go on left or right of image. 
+
+       *Quoted from Ernst Schumacher's 'Small is Beautiful'* [Schumacher-EF_1973]_ 
+     - .. image:: https://via.placeholder.com/600x450.png
+          :alt: Alt text for screen readers
+]]></content>
+    <tabTrigger>tbimgdesc</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>image with side panel</description>
+</snippet>

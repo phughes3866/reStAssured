@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>command</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>command inline role (cli stylised OS command text)</description>
+    <description>command inline role (cli stylised OS command text)[sphinx]</description>
 </snippet>

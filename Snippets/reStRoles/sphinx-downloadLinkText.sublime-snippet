@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>download</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>download inline role (download file link)</description>
+    <description>download inline role (download file link)[sphinx]</description>
 </snippet>

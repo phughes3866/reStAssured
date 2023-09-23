@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+.. |${1:date}| date:: $2 
+.. |${3:time}| date:: ${4:%H:%M}${5:
+
+e.g. Today's date is |date| (~2023-09-25 unformatted). This document was generated on |date| at |time|.
+
+%a  Sun Weekday as locale’s abbreviated name.
+%A  Sunday  Weekday as locale’s full name.
+%w  0   Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.
+%d  08  Day of the month as a zero-padded decimal number.
+%-d 8   Day of the month as a decimal number. (Platform specific)
+%b  Sep Month as locale’s abbreviated name.
+%B  September   Month as locale’s full name.
+%m  09  Month as a zero-padded decimal number.
+%-m 9   Month as a decimal number. (Platform specific)
+%y  13  Year without century as a zero-padded decimal number.
+%Y  2013    Year with century as a decimal number.
+%H  07  Hour (24-hour clock) as a zero-padded decimal number.
+%-H 7   Hour (24-hour clock) as a decimal number. (Platform specific)
+%I  07  Hour (12-hour clock) as a zero-padded decimal number.
+%-I 7   Hour (12-hour clock) as a decimal number. (Platform specific)
+%p  AM  Locale’s equivalent of either AM or PM.
+%M  06  Minute as a zero-padded decimal number.
+%-M 6   Minute as a decimal number. (Platform specific)
+%S  05  Second as a zero-padded decimal number.}
+
+$0
+]]></content>
+    <tabTrigger>date time</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>date time (of build) substitution definition[reSt]</description>
+</snippet>

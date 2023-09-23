@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+.. highlights::
+
+   Sources / Further Information:
+
+   * Link
+   * Link
+]]></content>
+    <tabTrigger>highlights-summary</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>highlights / summary / sources list</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+.. image:: ${1:image.jpeg}
+   :height: ${2:height e.g.100px}
+   :width: ${3:width e.g. 200px (can be % e.g. 50%)}
+   :scale: ${4:50% (combines with height and width if present)}
+   :alt: ${5:Image description (for SEO and the visually impaired)}
+   :align: ${6:left / center / right}
+   :target: ${7:URI (relative or absolute) or `a_ref_name`_ (adds hyperlink to image)}
+
+$0
+]]></content>
+    <tabTrigger>image_reSt</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>image directive template[reSt]</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+type out this text
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>test snippet for restructured text</description>
+</snippet>

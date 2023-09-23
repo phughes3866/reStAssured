@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>glosterm</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>term inline role (glossary term)</description>
+    <description>glossary term inline role[sphinx]</description>
 </snippet>

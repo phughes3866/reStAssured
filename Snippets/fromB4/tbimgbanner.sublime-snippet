@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+.. list-table:: Optional Title: A table for a full width image / banner. Img width >= 1200px
+   :class: full-width-image
+
+   * - .. image:: https://via.placeholder.com/1200x300.png
+          :alt: For screen readers. N.B. Img height (=1200 full feature)(=600 hero / top banner)(=300 narrow banner)
+]]></content>
+    <tabTrigger>tbimgbanner</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>full width image</description>
+</snippet>

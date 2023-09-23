@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+.. list-table:: One, two, or three images in a row. Optional Title. Recommended pics at least 400px wide, 2 or 3 of the same size (else they look bad when they stack on small screens). Optimum pic size = 600 x 450.
+   :class: blocksmall
+
+   * - .. image:: https://via.placeholder.com/600x450.png
+          :alt: For screen readers
+     - .. image:: https://via.placeholder.com/600x450.png
+          :alt: For screen readers
+]]></content>
+    <tabTrigger>tbimgstack</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>image bank</description>
+</snippet>

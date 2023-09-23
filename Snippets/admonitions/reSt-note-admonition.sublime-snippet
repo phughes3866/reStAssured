@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+
+.. note:: ${1:This is a note admonition.}
+   This is the second line of the first paragraph.
+
+   - The note contains all indented body elements
+     following.
+   - It includes this bullet list.
+
+$0
+]]></content>
+    <tabTrigger>note</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>note admonition[reSt]</description>
+</snippet>

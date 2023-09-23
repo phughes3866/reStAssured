@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>sup</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>sup inline role (superscript text)</description>
+    <description>sup inline role (superscript text)[reSt]</description>
 </snippet>

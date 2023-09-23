@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>file</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>file inline role (stylised filename text)</description>
+    <description>file inline role (file/folder name)[sphinx]</description>
 </snippet>

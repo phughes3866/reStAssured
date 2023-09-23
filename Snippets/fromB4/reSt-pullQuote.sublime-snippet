@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+.. pull-quote::
+
+   A pull-quote is a small selection of text "pulled out and quoted", typically in a larger typeface. 
+   Pull-quotes are used to attract attention, especially in long articles.
+
+]]></content>
+    <tabTrigger>pull-quote</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>bold quotation</description>
+</snippet>

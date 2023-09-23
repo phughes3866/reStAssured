@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+
+.. caution:: ${1:This is a caution admonition.}
+   This is the second line of the first paragraph.
+
+   - The admonition contains all indented body elements
+     following.
+   - It includes this bullet list.
+
+$0
+]]></content>
+    <tabTrigger>caution</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>caution admonition[reSt]</description>
+</snippet>

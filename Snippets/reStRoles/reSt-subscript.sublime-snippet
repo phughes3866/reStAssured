@@ -4,5 +4,5 @@ H\ :sub:`${1:${SELECTION/(^\s*$)/(?1two)/g}}` \O $0
 ]]></content>
     <tabTrigger>sub</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>sub inline role (subscript text)</description>
+    <description>sub inline role (subscript text)[reSt]</description>
 </snippet>

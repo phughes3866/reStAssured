@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>doclinklabelled</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>doc inline role (labelled document/page link)</description>
+    <description>doc inline role (labelled document/page link)[sphinx]</description>
 </snippet>

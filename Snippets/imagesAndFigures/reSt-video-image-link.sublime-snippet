@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+.. figure:: ${1:https://i.vimeocdn.com/video/1728160755-ba00e36c6ace1b9f41e5a8874229b31efc6bc377099d9e8c591e3cf0603c16fc-d_200x150}
+   :figwidth: ${2:40%}
+   :width: ${3:90%}
+   :align: ${4:left / center / right}
+   :alt: ${5:Image description (for SEO and the visually impaired)}
+   :target: ${6:https://vimeo.com/765708714}
+
+   ${7:[Delete this paragraph]Other directive options are (:scale:, :height:, :class:)
+   N.B. :figwidth: is the figure width within the screen width,
+   and :width: is the image width within the figwidth.
+
+   }${8:**This is the caption of the video still image**}
+
+$0
+]]></content>
+    <tabTrigger>videopiclink</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>video image link[reSt]</description>
+</snippet>

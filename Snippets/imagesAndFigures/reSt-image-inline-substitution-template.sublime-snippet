@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+.. |${1:imglabel}| image:: ${2:image.jpeg}
+   :class: no-scaled-link
+   :height: ${3:1em}
+   :align: ${4:middle}
+   :alt: ${5:Image description (for SEO and the visually impaired)}
+
+$0
+]]></content>
+    <tabTrigger>image_inline_reSt</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>inline-image (via substitution) template[reSt]</description>
+</snippet>
