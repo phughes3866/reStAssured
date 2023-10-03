@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+
+.. raw:: html
+
+   <div style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
+
+   ${1:Insert Video Embed Code Here e.g.:: }${2:<iframe width="560" height="315" src="https://www.youtube.com/embed/zRzBJCS_dn4?si=e_iOarfpu_ED3KEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>}
+
+   </div>
+
+$0
+]]></content>
+    <tabTrigger>video_embed_fullwidth</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>embed video fullwidth[reSt]</description>
+</snippet>

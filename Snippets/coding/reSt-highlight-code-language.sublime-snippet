@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+.. highlight:: ${1:c/python/bash specify code highlight lang for subsequent inline code and literal blocks (where lang not defined)}
+   ${2::linenothreshold: 10 (Optional: show line numbers for subsequent code blocks more than 10 lines long}
+
+::
+    
+    We can put a literal block now and it will be highlighted as per the lexer set above
+    def myfunc() # this would show nicely in python
+    
+$0
+]]></content>
+    <tabTrigger>highlight code</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>highlight directive(set subsequent code higlighting lang - via pygments)[reSt]</description>
+</snippet>

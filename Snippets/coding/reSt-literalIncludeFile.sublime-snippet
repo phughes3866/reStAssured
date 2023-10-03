@@ -1,19 +1,19 @@
 <snippet>
     <content><![CDATA[
-.. literalinclude:: ./_static/${1:../data/relfilname.py}
-   :language: ${2:python/bash/rest}
+.. literalinclude:: ${1:relative or project absolute filename e.g. /examplecode/this.py}
+   :language: ${2:python/bash/rst - any highlight lang from pygments lexers (if installed)}
    :caption: Name Above
    :linenos:
    :lineno-match:
    :lineno-start: 1
    :emphasize-lines: 12,15-18
-   :lines: 1,3,5-10,20-
+   :lines: 1,3,5-10,20- (lines to show)
    :start-after: string match
    :end-before: string match
 
 $0
 ]]></content>
-    <tabTrigger>litinc</tabTrigger>
-    <scope>text.restructuredtext - source - meta.tag, punctuation.definition.tag.begin</scope>
+    <tabTrigger>literal_inc</tabTrigger>
+    <scope>text.restructuredtext</scope>
     <description>literal include file block</description>
 </snippet>

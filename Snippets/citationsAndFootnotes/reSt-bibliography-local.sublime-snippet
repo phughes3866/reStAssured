@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+.. rubric:: ${1:Bibliography}
+
+${2:.. [Author-AB_1992] Author A.B. 1982 Best Book In The World. Penguin, London. >>> The Bibliography rubric should go towards the end of a document (note: sphinx can handle citations globally so the bibliography can go in a separate, project wide file)} $0
+]]></content>
+    <tabTrigger>bibliography_local</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>bibliography section for local page[reSt]</description>
+</snippet>

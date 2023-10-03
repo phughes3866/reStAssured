@@ -6,8 +6,10 @@
 
    * Link
    * Link
+
+$0
 ]]></content>
     <tabTrigger>highlights-summary</tabTrigger>
     <scope>text.restructuredtext</scope>
-    <description>highlights / summary / sources list</description>
+    <description>highlights / summary / sources list[reSt]</description>
 </snippet>

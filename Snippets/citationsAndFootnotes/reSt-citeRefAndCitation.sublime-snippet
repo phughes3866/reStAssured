@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+[${1:Author-AB_1992}]_
+
+.. [${1:Author-AB_1992}] ${2:Author A.B. 1982 Best Book In The World. Penguin, London. !!!Place This In Bibliography!!}
+
+$0
+]]></content>
+    <tabTrigger>citeRefPlus</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>inline citation ref plus citation[reSt]</description>
+</snippet>

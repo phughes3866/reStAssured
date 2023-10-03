@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-[${1:Hughes-TP_1966}]_ 
-]]></content>
-    <tabTrigger>cite</tabTrigger>
-    <scope>text.restructuredtext</scope>
-    <description>inline citation key</description>
-</snippet>

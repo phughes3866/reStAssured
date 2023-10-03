@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+[${1:Author-AB_1992}]_ $0
+]]></content>
+    <tabTrigger>citeRef</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>inline citation reference[reSt]</description>
+</snippet>

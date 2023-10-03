@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+.. seealso::
+
+   ${1:A link / url}
+      ${2:Description of link e.g. more information on rhino sneezing habits.}
+
+   ${3:Another link / ref / urs}
+      ${4:How cats whiskers can cure insomnia.}
+]]></content>
+    <tabTrigger>seealso</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>see also directive[reSt]</description>
+</snippet>

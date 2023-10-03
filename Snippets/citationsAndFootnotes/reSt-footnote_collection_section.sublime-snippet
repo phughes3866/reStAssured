@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+.. rubric:: ${1:Footnotes}
+
+${2:.. [1] The footnotes' rubric should go towards (at!) the end of the document, with the footnotes beneath.} $0
+]]></content>
+    <tabTrigger>footnote section</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>footnote section[reSt]</description>
+</snippet>

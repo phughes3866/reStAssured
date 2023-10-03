@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+.. rst-class:: centered
+
+.. topic:: ${1:A Poem}
+
+   | I might want to write a poem
+   | But then again I might not
+   | I might just want to be goin'
+   | Goin' to where it is 'ot
+
+   A topic is a self contained section with no subsections.
+   The 'Topic Title' is ignored in toctree parsing.
+
+$0
+]]></content>
+    <tabTrigger>topic_centred</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>centred topic block directive[custom reSt]</description>
+</snippet>

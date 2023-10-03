@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+
+.. epigraph::
+   .. image:: optional_author_quote_related_image.jpeg
+      :align: right
+      :scale: 50%
+      :alt: Carl Sagan
+
+   ${1:Rain-water never stands on high ground, but runs down to the lowest level. So also the mercy of God remains in the hearts of the lowly, but drains off from those of the vain and the proud.} 
+
+   -- ${2:Sri Ramakrishna} [Author_A_2012]_ 
+
+   OR The Reference can be added manually under the author like this:
+
+   | -- Sri Ramakrishna 
+   |   *(Or we can add a manual reference below the author like this)*
+
+$0
+]]></content>
+    <tabTrigger>epigraph-quote</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>quotation attributed to author[reSt]</description>
+</snippet>

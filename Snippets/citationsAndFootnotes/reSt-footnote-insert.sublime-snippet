@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+[${1:#}]_ 
+.. [${1:#}] ${2:leave the above marker in the text, move this footnote text to footnote rubric/section (end of doc)}
+
+]]></content>
+    <tabTrigger>footnote_insert</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>footnote insert numbered / autonumbered[reSt]</description>
+</snippet>

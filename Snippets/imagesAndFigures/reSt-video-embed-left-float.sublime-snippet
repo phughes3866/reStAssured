@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+
+.. raw:: html
+
+   <div style="margin: 0 1em 0.5em 0m; padding: 7px; width: 40%; float: left; clear: left;  overflow-x: auto;">
+
+   ${1:Insert Video Embed Code Here e.g.:: }${2:<div style="padding:55.88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/765708714?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="From 'Run of the Arrow' 1957"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>}
+
+   </div>
+
+$0
+]]></content>
+    <tabTrigger>video_embed_left</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>embed video in left float[reSt]</description>
+</snippet>

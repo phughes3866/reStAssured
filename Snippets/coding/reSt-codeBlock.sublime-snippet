@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-.. code-block:: ${1:bash / text / python (see pygment lexers)}
+.. code-block:: ${1:bash / text / python (see pygment lexers) note: inherits from previous .. highlight:: lang (if set)}
    :caption: this.py .. appears above code block
    :name: my_config_file_reference .. for ref pointers to block
    :linenos: .. if present then add line numbers
@@ -9,8 +9,10 @@
    :dedent: 4 ..strip indentation chars from code
 
    ${2:source code here}
+
+$0
 ]]></content>
-    <tabTrigger>code</tabTrigger>
+    <tabTrigger>code_block</tabTrigger>
     <scope>text.restructuredtext</scope>
     <description>code block directive</description>
 </snippet>

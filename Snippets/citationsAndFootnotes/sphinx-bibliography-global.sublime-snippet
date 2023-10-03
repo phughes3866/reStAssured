@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+:orphan:
+
+.. _global_bibliography:
+
+************************
+Bibliographic References
+************************
+
+.. rubric:: A
+
+${1:.. [Author-AB_1992] Author A.B. 1982 Best Book In The World. Penguin, London. >>> (note: sphinx can handle citations globally so this bibliography can go in a separate, project wide file)}
+
+.. rubric:: B
+
+.. rubric:: C
+
+.. rubric:: D
+
+.. rubric:: E etc.....
+
+$0
+]]></content>
+    <tabTrigger>bibliography_global</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>bibliography (global, for all docs, in a project-wide file)[sphinx]</description>
+</snippet>

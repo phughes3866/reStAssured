@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+.. Standard data files, mainly containing a large number of unicode character replacements and intended for inclusion in reStructuredText documents are distributed with the Docutils source code, located in the "docutils" package in the docutils/parsers/rst/include directory. To access these files, use the special syntax for standard "include" data files, angle brackets around the file name:
+
+.. include:: <isotech.txt>
+
+Now this replacement: |acd| shows a sine wave. And this one: |ge| shows a greater-than or equal to symbol.
+
+.. There are a good number of these docutils resource files. See https://docutils.sourceforge.io/docs/ref/rst/definitions.html for more details. As each file is fairly large, should you only need a few substitutions it would make sense to copy them and use them manually:
+
+.. |ge|       unicode:: U+02265 .. GREATER-THAN OR EQUAL TO
+.. |there4|   unicode:: U+02234 .. THEREFORE
+
+So 5 |ge| 4 |there4| the world of logic is happy.
+
+$0
+]]></content>
+    <tabTrigger>unicode-map</tabTrigger>
+    <scope>text.restructuredtext</scope>
+    <description>utilise docutils unicode char replacements[reSt]</description>
+</snippet>
